@@ -1,0 +1,14 @@
+# Environment
+*.env
+*.venv
+
+# Python cache
+__pycache__/
+/__pycache__
+.pytest_cache/
+*.joblib
+*.log
+
+# Editor
+.vscode/
+
