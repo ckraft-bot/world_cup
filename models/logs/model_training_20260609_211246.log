@@ -1,0 +1,12 @@
+2026-06-09 21:12:46.563 | INFO     | __main__:load_feature_table:78 - Loaded feature table: C:\Users\Clair\Documents\GitHub\world_cup\data\processed\features\country_tournament_features.csv | shape=(427, 32)
+2026-06-09 21:12:46.563 | INFO     | __main__:split_train_test_by_year:160 - Train rows: 298 | Test rows: 129
+2026-06-09 21:12:46.563 | INFO     | __main__:split_train_test_by_year:161 - Train year range: 1930.0-1998.0
+2026-06-09 21:12:46.563 | INFO     | __main__:split_train_test_by_year:162 - Test year range: 2002.0-2014.0
+2026-06-09 21:12:46.563 | INFO     | __main__:build_preprocessor:193 - Numeric features: 28 | Categorical features: 2
+2026-06-09 21:12:46.615 | INFO     | __main__:train_and_compare_models:267 - logistic_regression metrics: {'model': 'logistic_regression', 'accuracy': 0.9534883720930233, 'precision': 0.375, 'recall': 0.75, 'f1': 0.5, 'roc_auc': 0.984}
+2026-06-09 21:12:47.144 | INFO     | __main__:train_and_compare_models:267 - random_forest metrics: {'model': 'random_forest', 'accuracy': 0.9844961240310077, 'precision': 0.75, 'recall': 0.75, 'f1': 0.75, 'roc_auc': 0.98}
+2026-06-09 21:12:47.339 | INFO     | __main__:persist_outputs:298 - Saved model artifact: C:\Users\Clair\Documents\GitHub\world_cup\models\country_winner_random_forest_20260609_211247.joblib
+2026-06-09 21:12:47.339 | INFO     | __main__:persist_outputs:299 - Saved model comparison: C:\Users\Clair\Documents\GitHub\world_cup\models\country_winner_model_comparison_20260609_211247.csv
+2026-06-09 21:12:47.339 | INFO     | __main__:persist_outputs:300 - Saved best-model metrics: C:\Users\Clair\Documents\GitHub\world_cup\models\country_winner_random_forest_metrics_20260609_211247.txt
+2026-06-09 21:12:47.340 | INFO     | __main__:main:348 - Training/evaluation completed. Best model: random_forest
+2026-06-09 21:12:47.340 | INFO     | __main__:main:349 - Run log: C:\Users\Clair\Documents\GitHub\world_cup\models\logs\model_training_20260609_211246.log

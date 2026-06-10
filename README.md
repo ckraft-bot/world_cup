@@ -1,20 +1,52 @@
-# Introduction 
-TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project. 
+## Overview
 
-# Getting Started
-TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
-1.	Installation process
-2.	Software dependencies
-3.	Latest releases
-4.	API references
+This project builds country-level World Cup winner likelihood models from historical FIFA World Cup data.
 
-# Build and Test
-TODO: Describe and show how to build your code and run the tests. 
+Current target:
+- `is_world_cup_winner = 1` if a country wins the tournament in that year, else `0`.
 
-# Contribute
-TODO: Explain how other users and developers can contribute to make your code better. 
+## Testing
 
-If you want to learn more about creating good readme files then refer the following [guidelines](https://docs.microsoft.com/en-us/azure/devops/repos/git/create-a-readme?view=azure-devops). You can also seek inspiration from the below readme files:
-- [ASP.NET Core](https://github.com/aspnet/Home)
-- [Visual Studio Code](https://github.com/Microsoft/vscode)
-- [Chakra Core](https://github.com/Microsoft/ChakraCore)
+The project includes a baseline `pytest` suite in `tests/` focused on:
+
+- Data prep parsing/coercion rules.
+- Feature engineering correctness on synthetic inputs.
+- Model utility behavior for splitting, preprocessing, and metric generation.
+- A lightweight feature pipeline smoke test.
+
+### Install dependencies
+
+```powershell
+pip install -r requirements.txt
+```
+
+### Run tests
+
+```powershell
+pytest -q
+```
+
+Run tests and save a timestamped log file in `test-results/`:
+
+```powershell
+python run_tests.py
+```
+
+## Pipeline
+
+Run the full workflow in order:
+- data preparation
+- EDA notebook execution
+- feature engineering
+- model training and evaluation
+
+```powershell
+python notebooks/pipeline.py
+```
+
+Skip notebook execution when you only want script stages:
+
+```powershell
+python notebooks/pipeline.py --skip-eda
+```
+

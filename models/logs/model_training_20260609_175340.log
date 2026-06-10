@@ -1,0 +1,12 @@
+2026-06-09 17:53:40.842 | INFO     | __main__:load_feature_table:80 - Loaded feature table: C:\Users\c17527k\Sandbox\claire_adhoc\Demo\World Cup\data\processed\features\country_tournament_features.csv | shape=(427, 32)
+2026-06-09 17:53:40.842 | INFO     | __main__:split_train_test_by_year:162 - Train rows: 298 | Test rows: 129
+2026-06-09 17:53:40.842 | INFO     | __main__:split_train_test_by_year:163 - Train year range: 1930.0-1998.0
+2026-06-09 17:53:40.842 | INFO     | __main__:split_train_test_by_year:164 - Test year range: 2002.0-2014.0
+2026-06-09 17:53:40.842 | INFO     | __main__:build_preprocessor:195 - Numeric features: 28 | Categorical features: 2
+2026-06-09 17:53:40.932 | INFO     | __main__:train_and_compare_models:269 - logistic_regression metrics: {'model': 'logistic_regression', 'accuracy': 0.9534883720930233, 'precision': 0.375, 'recall': 0.75, 'f1': 0.5, 'roc_auc': 0.984}
+2026-06-09 17:53:42.170 | INFO     | __main__:train_and_compare_models:269 - random_forest metrics: {'model': 'random_forest', 'accuracy': 0.937984496124031, 'precision': 0.3, 'recall': 0.75, 'f1': 0.42857142857142855, 'roc_auc': 0.9740000000000001}
+2026-06-09 17:53:42.251 | INFO     | __main__:persist_outputs:300 - Saved model artifact: C:\Users\c17527k\Sandbox\claire_adhoc\Demo\World Cup\models\country_winner_logistic_regression_20260609_175342.joblib
+2026-06-09 17:53:42.253 | INFO     | __main__:persist_outputs:301 - Saved model comparison: C:\Users\c17527k\Sandbox\claire_adhoc\Demo\World Cup\models\country_winner_model_comparison_20260609_175342.csv
+2026-06-09 17:53:42.253 | INFO     | __main__:persist_outputs:302 - Saved best-model metrics: C:\Users\c17527k\Sandbox\claire_adhoc\Demo\World Cup\models\country_winner_logistic_regression_metrics_20260609_175342.txt
+2026-06-09 17:53:42.253 | INFO     | __main__:main:350 - Training/evaluation completed. Best model: logistic_regression
+2026-06-09 17:53:42.253 | INFO     | __main__:main:351 - Run log: C:\Users\c17527k\Sandbox\claire_adhoc\Demo\World Cup\models\logs\model_training_20260609_175340.log

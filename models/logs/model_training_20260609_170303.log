@@ -1,0 +1,12 @@
+2026-06-09 17:03:03.845 | INFO     | __main__:load_feature_table:80 - Loaded feature table: C:\Users\c17527k\Sandbox\claire_adhoc\Demo\World Cup\data\processed\features\match_features.csv | shape=(4572, 67)
+2026-06-09 17:03:03.851 | INFO     | __main__:split_train_test_time:143 - Train rows: 3657 | Test rows: 915
+2026-06-09 17:03:03.851 | INFO     | __main__:split_train_test_time:144 - Train year range: 1930.0-2014.0
+2026-06-09 17:03:03.852 | INFO     | __main__:split_train_test_time:145 - Test year range: nan-nan
+2026-06-09 17:03:03.854 | INFO     | __main__:build_preprocessor:176 - Numeric features: 33 | Categorical features: 7
+2026-06-09 17:03:04.075 | INFO     | __main__:train_and_compare_models:244 - logistic_regression metrics: {'model': 'logistic_regression', 'accuracy': 1.0, 'precision': 0.0, 'recall': 0.0, 'f1': 0.0, 'roc_auc': nan}
+2026-06-09 17:03:05.034 | INFO     | __main__:train_and_compare_models:244 - random_forest metrics: {'model': 'random_forest', 'accuracy': 1.0, 'precision': 0.0, 'recall': 0.0, 'f1': 0.0, 'roc_auc': nan}
+2026-06-09 17:03:05.082 | INFO     | __main__:persist_outputs:275 - Saved model artifact: C:\Users\c17527k\Sandbox\claire_adhoc\Demo\World Cup\models\logistic_regression_20260609_170305.joblib
+2026-06-09 17:03:05.082 | INFO     | __main__:persist_outputs:276 - Saved model comparison: C:\Users\c17527k\Sandbox\claire_adhoc\Demo\World Cup\models\model_comparison_20260609_170305.csv
+2026-06-09 17:03:05.082 | INFO     | __main__:persist_outputs:277 - Saved best-model metrics: C:\Users\c17527k\Sandbox\claire_adhoc\Demo\World Cup\models\logistic_regression_metrics_20260609_170305.txt
+2026-06-09 17:03:05.082 | INFO     | __main__:main:321 - Training/evaluation completed. Best model: logistic_regression
+2026-06-09 17:03:05.082 | INFO     | __main__:main:322 - Run log: C:\Users\c17527k\Sandbox\claire_adhoc\Demo\World Cup\models\logs\model_training_20260609_170303.log

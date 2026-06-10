@@ -1,0 +1,17 @@
+Best model: random_forest
+
+accuracy: 0.9387978142076503
+precision: 0.6458333333333334
+recall: 0.9489795918367347
+f1: 0.768595041322314
+roc_auc: 0.9808657857267754
+confusion_matrix: [[766, 51], [5, 93]]
+classification_report:               precision    recall  f1-score   support
+
+           0       0.99      0.94      0.96       817
+           1       0.65      0.95      0.77        98
+
+    accuracy                           0.94       915
+   macro avg       0.82      0.94      0.87       915
+weighted avg       0.96      0.94      0.94       915
+
